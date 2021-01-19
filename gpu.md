@@ -13,7 +13,7 @@ export LC_ALL=C # Specification of environment variables
 %post
 # Some generic Ubuntu libraries
 apt-get update
-apt-get install -y libhdf5-dev graphviz locales python3-dev python3-pip curl
+apt-get install -y python3-dev python3-pip curl
 apt-get clean
 
 # Python requirements
