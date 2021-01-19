@@ -1,6 +1,6 @@
 # Singularity containers
 
-Welcome to the Singularity tutorial repo. Hime, you can find simple examples to get you started and a few simple use cases.
+Welcome to the Singularity tutorial repo. Here, you can find simple examples to get you started and a few simple use cases.
 
 ## A toy example
 
