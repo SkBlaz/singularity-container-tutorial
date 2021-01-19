@@ -31,3 +31,14 @@ Assuming Bob got the tree.py working on GPUs. How can he scale with singularity?
 1. [Sling tutorial slides](http://www.sling.si/sling/wp-content/uploads/2020/03/Krasovec_Javorsek-sling-maister-fri2020.pdf)
 
 2. [Detailed tutorial by Barbara Krašovec](http://www.sling.si/sling/vec/dogodki/vzd1-2018/#Anatomija_vsebnikov)
+
+## Isn't this kind of Docker? Why Singularity?
+
+The following are the main reasons for using Singularity for HPC (credit: Reddit).
+
+1. Singularity effectively runs as the running user and doesn’t result in elevated access. Docker doesn't and can be problematic from a security standpoint
+2. Singularity runs container processes without a daemon. They just run as child processes.
+3. Singularity is better for command line applications and accessing devices like GPUs or MPI hardware without jumping through hoops.
+4. Docker provides no built-in way to allow users to start containers that are certain to have limited access rights.
+5.  Docker images are stored off in the local image cache, and you’re expected to interact with them using the docker image command, e.g. docker image ls.
+In contrast, Singularity images are just normal files on your filesystem. Now that we have a SIF file, we can run it.
