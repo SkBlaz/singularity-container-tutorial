@@ -1,8 +1,53 @@
 # Compiling own images
 
 Assuming Bob became a real fan once we've shown him the **container.sif exec** magic.
-A new project arrives, where Bob realizes he needs a bit different of an environment, across multiple machines now. To help him, we suggest the following:
+A new project arrives, where Bob realizes he needs an environment that is different, whilst considering multiple machines. To help him, we suggest the following:
 
 1. Install Singularity across all machines he plans to use ([installation](installation.md))
 2. Compile a **new** Singularity container with the newest coolest libraries
 3. Proceed as in step [2](running.md)
+
+## Compiling Singularity images
+The key ingredient of each image (similarly to Docker files) are the description files (ending in .dsc). Let's consult the following example:
+
+```
+BootStrap: docker
+From: ubuntu # We are building an ubuntu-based image
+
+%environment
+export LC_ALL=C # Specification of environment variables
+
+%post
+# Some generic Ubuntu libraries
+apt-get update
+apt-get install -y libhdf5-dev graphviz locales python3-dev python3-pip curl
+apt-get clean
+
+# Python requirements
+pip3 install deap==1.3.0
+pip3 install pandas==0.25.0
+pip3 install nltk==3.4.4
+pip3 install scipy==1.4.0
+pip3 install networkx==2.3
+pip3 install matplotlib==3.1.0
+pip3 install seaborn
+pip3 install tqdm==4.40.2
+pip3 install numpy
+pip3 install gensim
+pip3 install umap-learn
+pip3 install editdistance
+pip3 install nose==1.3.7
+pip3 install update-checker>=0.16
+pip3 install stopit>=1.1.1
+pip3 install joblib>=0.13.2
+pip3 install tpot
+
+```
+
+The description file (assuming it is stored as environment.dsc) is essentially a *recipe* for specifying how the environment should look like. We first install some Unix libraries (apt-get part), followed by python library installation (pip3). Once specified, there is only one line to rule them all:
+
+```
+singularity build coolNewImage.sif environment.dsc
+```
+
+And that's it. Should all work well, Bob now has **coolNewImage.sif**, a brand new image with which he can perform experiments on all other machines where the singularity was previously installed.
