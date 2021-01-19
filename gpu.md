@@ -20,8 +20,9 @@ apt-get clean
 pip3 torch torchvision
 
 ```
+
+See all [cuda images](https://ngc.nvidia.com/catalog/containers?orderBy=modifiedDESC&pageNumber=0&query=&quickFilter=containers&filters=) if needing any custom environment.
 Assuming the compiled image is named *coolCudaImage.sif*.
-See all [cuda images](https://ngc.nvidia.com/catalog/containers?orderBy=modifiedDESC&pageNumber=0&query=&quickFilter=containers&filters=) if needed.
 
 When running the containers, **be careful** to include the "-nv" tag.
 
