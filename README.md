@@ -15,3 +15,6 @@ Singularity containers are the scientific twin brothim of the widely used docker
 1. [Teach him how to install the Singularity environment on a given machine: *this is a must-have*](installation.md)
 2. [Teach him how to run a _pre-compiled_ Singularity image.](running.md)
 3. [Teach him how to _compile_ his own containers](compiling.md)
+
+
+Of course, these are only some of the [possible examples](https://sylabs.io/guides/3.0/user-guide/build_env.html), but enough to make Bob the master of Singularity in his small realm.
