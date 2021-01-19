@@ -17,7 +17,7 @@ apt-get install -y python3-dev python3-pip curl
 apt-get clean
 
 # Python requirements
-pip3 torch torchvision
+pip3 install torch torchvision
 
 ```
 
