@@ -31,3 +31,13 @@ Given an example Singularity image, e.g., *OurSingularityImage.sif*, the above p
 ```
 singularity exec OurSingularityImage.sif python tree.py --super_big_data Bob_somedata.dat --super_multitarget_space Bob_targets.dat
 ```
+
+and the output should be, of course, different. E.g.,
+
+```
+RESULT10fCV 1 0.31
+RESULT10fCV 2 0.32
+RESULT10fCV 3 0.33
+```
+
+That's it.
