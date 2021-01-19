@@ -40,4 +40,4 @@ RESULT10fCV 2 0.32
 RESULT10fCV 3 0.33
 ```
 
-That's it.
+That's it. Bob was able to **replicate** our environment and run the codebase.
