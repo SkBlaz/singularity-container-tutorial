@@ -19,5 +19,15 @@ Singularity containers are the scientific twin brothim of the widely used docker
 
 Of course, these are only some of the [possible examples](https://sylabs.io/guides/3.0/user-guide/build_env.html), but enough to make Bob the master of Singularity in his small realm.
 
-## Take home message
+## Take home message - 1
 If possible, do the extra step of providing the .dsc file so people can properly replicate the key parts of the codebase.
+
+## Extra step - GPUs
+Assuming Bob got the tree.py working on GPUs. How can he scale with singularity?
+
+[With some additional configuration.](gpu.md)
+
+## Additional resources
+1. [Sling tutorial slides](http://www.sling.si/sling/wp-content/uploads/2020/03/Krasovec_Javorsek-sling-maister-fri2020.pdf)
+
+2. [Detailed tutorial by Barbara Krašovec](http://www.sling.si/sling/vec/dogodki/vzd1-2018/#Anatomija_vsebnikov)
