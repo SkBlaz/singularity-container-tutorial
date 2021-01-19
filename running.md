@@ -9,9 +9,25 @@ python tree.py --super_big_data somedata.dat --super_multitarget_space targets.d
 and returns something in the lines of:
 
 ```
-RESULT_10fCV 1 0.89
-RESULT_10fCV 2 0.85
-RESULT_10fCV 3 0.81
+RESULT10fCV 1 0.89
+RESULT10fCV 2 0.85
+RESULT10fCV 3 0.81
 ```
 
-Of course, Bob is interested in obtaining the above results of cross validation for _some new data_.
+Of course, Bob is interested in obtaining the above results of cross validation for _some new data_. Assuming that bob is not able to exactly replicate the environment on his own for one of the following reasons:
+
+1. Some driver conflict prohibits installation of one of the libraries
+2. He's unable to install all requirements.txt directly for whatever reason
+3. He's lazy
+
+We are able to present a simple solution - the *Singularity* container. The idea is the following:
+1. Precompile a Python environment with minimal spatial overhead and all required libraries
+2. Share the environment as a *single file*
+
+## What are singularity files?
+Singularity files are *images*, just like e.g., your favourite Star Wars movie DVD.
+Given an example Singularity image, e.g., *OurSingularityImage.sif*, the above piece of code can be run as:
+
+```
+singularity exec OurSingularityImage.sif python tree.py --super_big_data Bob_somedata.dat --super_multitarget_space Bob_targets.dat
+```
