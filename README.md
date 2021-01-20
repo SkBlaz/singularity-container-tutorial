@@ -32,6 +32,8 @@ Assuming Bob got the tree.py working on **GPUs**. How can he scale with singular
 
 2. [Detailed tutorial by Barbara Krašovec](http://www.sling.si/sling/vec/dogodki/vzd1-2018/#Anatomija_vsebnikov)
 
+3. [First steps - official Singularity](https://www.bsc.es/support/PATC/2ndDAY/11:00-12:00_Containers-HPC.pdf)
+
 ## Isn't this kind of Docker? Why Singularity?
 
 The following are the main reasons for using Singularity for HPC (credit: Reddit).
