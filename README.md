@@ -15,6 +15,7 @@ Singularity containers are the scientific twin brother of the widely used docker
 1. [Teach him how to install the Singularity environment on a given machine: *this is a must-have*](installation.md)
 2. [Teach him how to run a _pre-compiled_ Singularity image.](running.md)
 3. [Teach him how to _compile_ his own containers](compilation.md)
+4. [Teach him how to perform basic image manipulations](manipulation.md)
 
 
 Of course, these are only some of the [possible examples](https://sylabs.io/guides/3.0/user-guide/build_env.html), but enough to make Bob the master of Singularity in his small realm.
@@ -44,3 +45,4 @@ The following are the main reasons for using Singularity for HPC (credit: Reddit
 4. Docker provides no built-in way to allow users to start containers that are certain to have limited access rights.
 5.  Docker images are stored off in the local image cache, and you’re expected to interact with them using the docker image command, e.g. docker image ls.
 In contrast, Singularity images are just normal files on your filesystem. Now that we have a SIF file, we can run it.
+
