@@ -44,6 +44,11 @@ pip3 install tpot
 
 ```
 
+Other container sources:
++ URI beginning with library:// to build from the Container Library
++ URI beginning with docker:// to build from Docker Hub
++ URI beginning with shub:// to build from Singularity Hub
+
 The description file (assuming it is stored as environment.dsc) is essentially a *recipe* for specifying how the environment should look like. We first install some Unix libraries (apt-get part), followed by python library installation (pip3). Once specified, there is only one line to rule them all:
 
 ```
