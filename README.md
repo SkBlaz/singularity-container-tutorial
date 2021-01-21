@@ -1,6 +1,6 @@
 # Singularity containers
 
-Welcome to the Singularity tutorial repo. Here, you can find simple examples to get you started and a few simple use cases.
+Welcome to the Singularity tutorial repo. Here, you can find simple examples to get you started and a few simple use cases. The [slides](slides.pdf) are also available.
 
 <img src="https://www.msi.umn.edu/sites/default/files/singularity.png" width="200" height="200" />
 
