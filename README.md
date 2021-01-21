@@ -1,5 +1,7 @@
 # Singularity containers
 
+![Singularity image](https://www.msi.umn.edu/sites/default/files/singularity.png)
+
 Welcome to the Singularity tutorial repo. Here, you can find simple examples to get you started and a few simple use cases.
 
 ## A toy example
