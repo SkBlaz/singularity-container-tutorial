@@ -30,7 +30,7 @@ pip3 install nltk==3.4.4
 pip3 install scipy==1.4.0
 pip3 install networkx==2.3
 pip3 install matplotlib==3.1.0
-pip3 install seaborn
+pip3 install seaborn ## bad practice! Use versions.
 pip3 install tqdm==4.40.2
 pip3 install numpy
 pip3 install gensim
