@@ -23,10 +23,11 @@ Of course, these are only some of the [possible examples](https://sylabs.io/guid
 ## Intermediary take home message
 If possible, do the extra step of providing the .dsc file so people can properly replicate the key parts of the codebase.
 
-## Extra step - GPUs
+## Extra step - GPUs and HPC
 Assuming Bob got the tree.py working on **GPUs**. How can he scale with singularity?
 
-[With some additional configuration.](gpu.md)
++ [With some additional configuration (GPUs).](gpu.md)
++ [With some additional configuration (HPC).](hpc.md)
 
 ## Additional resources
 1. [Sling tutorial slides](http://www.sling.si/sling/wp-content/uploads/2020/03/Krasovec_Javorsek-sling-maister-fri2020.pdf)
