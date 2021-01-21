@@ -44,14 +44,14 @@ mpirun singularity exec image.sif massivelyParallelTree.py
 What if Bob forgot to install a particular library, and would like to make just this one little fix? Consider the following image:
 
 ```bash
-sudo singularity build --sandbox minitest docker://ubuntu
+sudo singularity build --sandbox minitest.sif docker://ubuntu
 
 ```
 Note the `--sandbox` option? This enables *editability*. Once having such image,
 open the shell with:
 
 ```bash
-singularity shell --writable minitest
+singularity shell --writable minitest.sif
 ```
 and perform any operations needed. The ENV variables are accessible in:
 
