@@ -10,7 +10,7 @@ Theoretically, being super strict and all, you've versioned all libraries (depen
 
 ## Enter Singularity
 
-Singularity containers are the scientific twin brother of the widely used docker containers. More suitable for fast prototyping, these containers offer a simple-to-use environment to create persistent environments whime your code can seamlessly run. To help Bob, you decide to:
+Singularity containers are the scientific twin brother of the widely used docker containers. More suitable for fast prototyping, these containers offer a simple-to-use environment to create persistent environments where your code can seamlessly run. To help Bob, you decide to:
 
 1. [Teach him how to install the Singularity environment on a given machine: *this is a must-have*](installation.md)
 2. [Teach him how to run a _pre-compiled_ Singularity image.](running.md)
@@ -34,6 +34,8 @@ Assuming Bob got the tree.py working on **GPUs**. How can he scale with singular
 2. [Detailed tutorial by Barbara Krašovec](http://www.sling.si/sling/vec/dogodki/vzd1-2018/#Anatomija_vsebnikov)
 
 3. [First steps - BSC](https://www.bsc.es/support/PATC/2ndDAY/11:00-12:00_Containers-HPC.pdf)
+
+4. [A bit more extensive tutorial](https://github.com/NIH-HPC/Singularity-Tutorial).
 
 ## Isn't this kind of Docker? Why Singularity?
 
