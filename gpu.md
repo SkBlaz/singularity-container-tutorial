@@ -24,7 +24,7 @@ pip3 install torch torchvision
 See all [cuda images](https://ngc.nvidia.com/catalog/containers?orderBy=modifiedDESC&pageNumber=0&query=&quickFilter=containers&filters=) if needing any custom environment.
 Assuming the compiled image is named *coolCudaImage.sif*.
 
-When running the containers, **be careful** to include the "-nv" tag.
+When running the containers, **be careful** to include the `--nv` tag.
 
 ```
 singularity exec --nv coolCudaImage.sif treeGPU.py --super_big_data Bob_somedata.dat --super_multitarget_space Bob_targets.dat
