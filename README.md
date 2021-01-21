@@ -1,8 +1,8 @@
 # Singularity containers
 
-<img src="https://www.msi.umn.edu/sites/default/files/singularity.png" width="200" height="200" />
-
 Welcome to the Singularity tutorial repo. Here, you can find simple examples to get you started and a few simple use cases.
+
+<img src="https://www.msi.umn.edu/sites/default/files/singularity.png" width="200" height="200" />
 
 ## A toy example
 
