@@ -60,4 +60,4 @@ singularity build coolNewImage.sif environment.dsc
 + `coolNewImage.sif` = name of the cool new image
 + `environment.dsc` = environment specification
 
-And that's it. Should all work well, Bob now has **coolNewImage.sif**, a brand new image with which he can perform experiments on all other machines where the singularity was previously installed.
+And that's it. Should all work well, Bob now has **coolNewImage.sif**, a brand new image with which he can perform experiments on all other machines where the singularity was **previously installed**.

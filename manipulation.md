@@ -59,3 +59,12 @@ and perform any operations needed. The ENV variables are accessible in:
 #!/bin/sh
 #custom env code
 ```
+
+
+## Other useful options
+
++ `nv`: Leverage GPUs 
++ `bind`: Bind mount directories to the containers
++ `contain`: isolate the container runtime from the host 
++ `cleanenv`: Clean the environment
++ `pwd`: Initial working directory within the container 
