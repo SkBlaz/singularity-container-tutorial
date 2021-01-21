@@ -5,7 +5,7 @@ A new project arrives, where Bob realizes he needs an environment that is differ
 
 1. Install Singularity across all machines he plans to use ([installation](installation.md))
 2. Compile a **new** Singularity container with the newest coolest libraries
-3. Proceed as in step [2](running.md)
+3. Proceed as in step [about running the containers](running.md)
 
 ## Compiling Singularity images
 The key ingredient of each image (similarly to Docker files) are the description files (ending in .dsc). Let's consult the following example:
