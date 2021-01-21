@@ -55,4 +55,9 @@ The description file (assuming it is stored as environment.dsc) is essentially a
 singularity build coolNewImage.sif environment.dsc
 ```
 
++ `singularity` = call of the tool
++ `build` = flag to generate an image
++ `coolNewImage.sif` = name of the cool new image
++ `environment.dsc` = environment specification
+
 And that's it. Should all work well, Bob now has **coolNewImage.sif**, a brand new image with which he can perform experiments on all other machines where the singularity was previously installed.
