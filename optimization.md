@@ -56,17 +56,31 @@ Where the first entry (`RESULT_LINE`) is the flag of the result line, `genes` th
 We will be using the `arc` client via .xrsl job descriptions, which for example look like:
 
 ```
-TODO
+&
+(executable = "runfile.sh")
+(inputFiles =
+  ("learners.py" "learners.py")
+  ("runfile.sh" "runfile.sh")
+  ("minimalML.sif" "gsiftp://dcache.arnes.si/data/arnes.si/gen.vo.sling.si/skrlj_virtual_envs/minimalML.sif")
+)
+(walltime = "5 hours")
+(memory=1000)
+(join="yes")
+(stdout="job.log")
+(count=8)
+(countpernode=8)
+(cache=no)
+(jobname="Singularity tutorial - learning")
 ```
 
 Here, we can see that in the first part, a runfile script needs to be provided. In our case, `run.sh` can be as simple as:
 ```
-singularity exec learners.py --dataset genes.tsv --num_trees 100
+singularity exec minimalML.sif python3 learners.py --dataset genes.tsv --num_trees 100
 ```
 Looks familiar? It should! This script simply executes a single command in our case. As we are performing a benchmark of sorts, let's explore more hyperparameter values automatically (within a single job!):
 
 ```
-for j in `seq 10 100`; do singularity exec learners.py --dataset genes.tsv --num_trees $j;done
+for j in `seq 10 100`; do singularity exec minimalML.sif python3 learners.py --dataset genes.tsv --num_trees $j;done
 ```
 
 This generates multiple jobs, which will all be executed within the same `xrsl` job.
@@ -86,4 +100,46 @@ arcget -a (get all jobs back)
 
 ```
 arcproxy -S proxyID (establish proxy for arc to communicate with the grid)
+```
+
+## Running the jobs
+Let's first sync our image to the cluster:
+
+```
+arccp minimalML.sif gsiftp://dcache.arnes.si/data/arnes.si/gen.vo.sling.si/skrlj_virtual_envs/
+```
+
+Next, let's send the job to the cluster called `trebuchet`,
+```
+arcsub -c trebuchet.ijs.si clusterjob.xrsl -o jobID.txt
+```
+
+The `benchmarkJob.txt` is the name of the job storage file. We can monitor wheter it runs OK via:
+```
+arcstat -i jobID.txt
+```
+
+Once it finishes, let's go into `cluster_results` folder and run:
+
+```
+arcget -i jobID.txt
+```
+
+## To find the best performing configuration, we can for example do the following:
+```
+cat job.log | grep 'RESULT_LINE' | sort -k5 -n | tail
+```
+resulting in:
+
+```
+RESULT_LINE	genes	RF	70	0.9649122807017545
+RESULT_LINE	genes	RF	75	0.9649122807017545
+RESULT_LINE	genes	RF	90	0.9649122807017545
+RESULT_LINE	genes	RF	92	0.9649122807017545
+RESULT_LINE	genes	RF	98	0.9649122807017545
+RESULT_LINE	genes	RF	32	0.9666666666666666
+RESULT_LINE	genes	RF	77	0.9666666666666666
+RESULT_LINE	genes	RF	83	0.9666666666666666
+RESULT_LINE	genes	RF	36	0.9666666666666668
+RESULT_LINE	genes	RF	52	0.9666666666666668
 ```

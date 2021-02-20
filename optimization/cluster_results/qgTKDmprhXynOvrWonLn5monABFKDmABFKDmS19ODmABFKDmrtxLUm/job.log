@@ -1,0 +1,182 @@
+Estimating for 10 trees.
+RESULT_LINE	genes	RF	10	0.9578947368421054
+Estimating for 11 trees.
+RESULT_LINE	genes	RF	11	0.9491228070175438
+Estimating for 12 trees.
+RESULT_LINE	genes	RF	12	0.9491228070175438
+Estimating for 13 trees.
+RESULT_LINE	genes	RF	13	0.9578947368421054
+Estimating for 14 trees.
+RESULT_LINE	genes	RF	14	0.949122807017544
+Estimating for 15 trees.
+RESULT_LINE	genes	RF	15	0.949122807017544
+Estimating for 16 trees.
+RESULT_LINE	genes	RF	16	0.9508771929824562
+Estimating for 17 trees.
+RESULT_LINE	genes	RF	17	0.9614035087719298
+Estimating for 18 trees.
+RESULT_LINE	genes	RF	18	0.9649122807017545
+Estimating for 19 trees.
+RESULT_LINE	genes	RF	19	0.9631578947368421
+Estimating for 20 trees.
+RESULT_LINE	genes	RF	20	0.956140350877193
+Estimating for 21 trees.
+RESULT_LINE	genes	RF	21	0.9596491228070176
+Estimating for 22 trees.
+RESULT_LINE	genes	RF	22	0.9614035087719299
+Estimating for 23 trees.
+RESULT_LINE	genes	RF	23	0.9596491228070176
+Estimating for 24 trees.
+RESULT_LINE	genes	RF	24	0.9508771929824562
+Estimating for 25 trees.
+RESULT_LINE	genes	RF	25	0.9578947368421054
+Estimating for 26 trees.
+RESULT_LINE	genes	RF	26	0.9578947368421054
+Estimating for 27 trees.
+RESULT_LINE	genes	RF	27	0.9526315789473685
+Estimating for 28 trees.
+RESULT_LINE	genes	RF	28	0.9578947368421054
+Estimating for 29 trees.
+RESULT_LINE	genes	RF	29	0.956140350877193
+Estimating for 30 trees.
+RESULT_LINE	genes	RF	30	0.9596491228070176
+Estimating for 31 trees.
+RESULT_LINE	genes	RF	31	0.9543859649122808
+Estimating for 32 trees.
+RESULT_LINE	genes	RF	32	0.9666666666666666
+Estimating for 33 trees.
+RESULT_LINE	genes	RF	33	0.9631578947368421
+Estimating for 34 trees.
+RESULT_LINE	genes	RF	34	0.9596491228070176
+Estimating for 35 trees.
+RESULT_LINE	genes	RF	35	0.9578947368421054
+Estimating for 36 trees.
+RESULT_LINE	genes	RF	36	0.9666666666666668
+Estimating for 37 trees.
+RESULT_LINE	genes	RF	37	0.9578947368421054
+Estimating for 38 trees.
+RESULT_LINE	genes	RF	38	0.956140350877193
+Estimating for 39 trees.
+RESULT_LINE	genes	RF	39	0.9596491228070176
+Estimating for 40 trees.
+RESULT_LINE	genes	RF	40	0.9596491228070176
+Estimating for 41 trees.
+RESULT_LINE	genes	RF	41	0.9649122807017545
+Estimating for 42 trees.
+RESULT_LINE	genes	RF	42	0.9543859649122808
+Estimating for 43 trees.
+RESULT_LINE	genes	RF	43	0.9614035087719299
+Estimating for 44 trees.
+RESULT_LINE	genes	RF	44	0.9649122807017545
+Estimating for 45 trees.
+RESULT_LINE	genes	RF	45	0.9596491228070176
+Estimating for 46 trees.
+RESULT_LINE	genes	RF	46	0.9649122807017545
+Estimating for 47 trees.
+RESULT_LINE	genes	RF	47	0.9578947368421054
+Estimating for 48 trees.
+RESULT_LINE	genes	RF	48	0.9649122807017545
+Estimating for 49 trees.
+RESULT_LINE	genes	RF	49	0.9578947368421054
+Estimating for 50 trees.
+RESULT_LINE	genes	RF	50	0.9649122807017545
+Estimating for 51 trees.
+RESULT_LINE	genes	RF	51	0.9631578947368421
+Estimating for 52 trees.
+RESULT_LINE	genes	RF	52	0.9666666666666668
+Estimating for 53 trees.
+RESULT_LINE	genes	RF	53	0.9631578947368421
+Estimating for 54 trees.
+RESULT_LINE	genes	RF	54	0.9649122807017545
+Estimating for 55 trees.
+RESULT_LINE	genes	RF	55	0.9596491228070176
+Estimating for 56 trees.
+RESULT_LINE	genes	RF	56	0.9578947368421054
+Estimating for 57 trees.
+RESULT_LINE	genes	RF	57	0.9631578947368421
+Estimating for 58 trees.
+RESULT_LINE	genes	RF	58	0.9649122807017545
+Estimating for 59 trees.
+RESULT_LINE	genes	RF	59	0.9596491228070176
+Estimating for 60 trees.
+RESULT_LINE	genes	RF	60	0.9578947368421054
+Estimating for 61 trees.
+RESULT_LINE	genes	RF	61	0.9596491228070176
+Estimating for 62 trees.
+RESULT_LINE	genes	RF	62	0.9596491228070176
+Estimating for 63 trees.
+RESULT_LINE	genes	RF	63	0.9578947368421054
+Estimating for 64 trees.
+RESULT_LINE	genes	RF	64	0.9578947368421054
+Estimating for 65 trees.
+RESULT_LINE	genes	RF	65	0.9596491228070174
+Estimating for 66 trees.
+RESULT_LINE	genes	RF	66	0.9649122807017545
+Estimating for 67 trees.
+RESULT_LINE	genes	RF	67	0.9578947368421054
+Estimating for 68 trees.
+RESULT_LINE	genes	RF	68	0.9631578947368421
+Estimating for 69 trees.
+RESULT_LINE	genes	RF	69	0.9578947368421054
+Estimating for 70 trees.
+RESULT_LINE	genes	RF	70	0.9649122807017545
+Estimating for 71 trees.
+RESULT_LINE	genes	RF	71	0.9596491228070176
+Estimating for 72 trees.
+RESULT_LINE	genes	RF	72	0.9631578947368421
+Estimating for 73 trees.
+RESULT_LINE	genes	RF	73	0.9614035087719298
+Estimating for 74 trees.
+RESULT_LINE	genes	RF	74	0.9578947368421054
+Estimating for 75 trees.
+RESULT_LINE	genes	RF	75	0.9649122807017545
+Estimating for 76 trees.
+RESULT_LINE	genes	RF	76	0.9614035087719298
+Estimating for 77 trees.
+RESULT_LINE	genes	RF	77	0.9666666666666666
+Estimating for 78 trees.
+RESULT_LINE	genes	RF	78	0.9596491228070176
+Estimating for 79 trees.
+RESULT_LINE	genes	RF	79	0.9614035087719298
+Estimating for 80 trees.
+RESULT_LINE	genes	RF	80	0.9631578947368421
+Estimating for 81 trees.
+RESULT_LINE	genes	RF	81	0.9614035087719299
+Estimating for 82 trees.
+RESULT_LINE	genes	RF	82	0.9631578947368421
+Estimating for 83 trees.
+RESULT_LINE	genes	RF	83	0.9666666666666666
+Estimating for 84 trees.
+RESULT_LINE	genes	RF	84	0.9614035087719298
+Estimating for 85 trees.
+RESULT_LINE	genes	RF	85	0.9614035087719299
+Estimating for 86 trees.
+RESULT_LINE	genes	RF	86	0.9631578947368421
+Estimating for 87 trees.
+RESULT_LINE	genes	RF	87	0.9596491228070176
+Estimating for 88 trees.
+RESULT_LINE	genes	RF	88	0.9631578947368421
+Estimating for 89 trees.
+RESULT_LINE	genes	RF	89	0.9614035087719299
+Estimating for 90 trees.
+RESULT_LINE	genes	RF	90	0.9649122807017545
+Estimating for 91 trees.
+RESULT_LINE	genes	RF	91	0.9614035087719298
+Estimating for 92 trees.
+RESULT_LINE	genes	RF	92	0.9649122807017545
+Estimating for 93 trees.
+RESULT_LINE	genes	RF	93	0.9631578947368421
+Estimating for 94 trees.
+RESULT_LINE	genes	RF	94	0.9614035087719299
+Estimating for 95 trees.
+RESULT_LINE	genes	RF	95	0.9596491228070176
+Estimating for 96 trees.
+RESULT_LINE	genes	RF	96	0.9614035087719299
+Estimating for 97 trees.
+RESULT_LINE	genes	RF	97	0.9614035087719298
+Estimating for 98 trees.
+RESULT_LINE	genes	RF	98	0.9649122807017545
+Estimating for 99 trees.
+RESULT_LINE	genes	RF	99	0.9631578947368421
+Estimating for 100 trees.
+RESULT_LINE	genes	RF	100	0.9649122807017545

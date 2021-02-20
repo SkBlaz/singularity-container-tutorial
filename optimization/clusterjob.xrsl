@@ -1,0 +1,15 @@
+&
+(executable = "runfile.sh")
+(inputFiles =
+  ("learners.py" "learners.py")
+  ("runfile.sh" "runfile.sh")
+  ("minimalML.sif" "gsiftp://dcache.arnes.si/data/arnes.si/gen.vo.sling.si/skrlj_virtual_envs/minimalML.sif")
+)
+(walltime = "5 hours")
+(memory=1000)
+(join="yes")
+(stdout="job.log")
+(count=8)
+(countpernode=8)
+(cache=no)
+(jobname="Singularity tutorial - learning")
