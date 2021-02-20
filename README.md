@@ -29,6 +29,10 @@ Assuming Bob got the *tree.py* working on **GPUs**. How can he scale with Singul
 + [With some additional configuration (GPUs).](gpu.md)
 + [With some additional configuration (HPC).](hpc.md)
 
+## Hands-on: Hyperparameter Optimization at Scale
+In the final part of the tutorial, we'll explore a hands-on example on [hyperparameter optimization](optimization.md).
+
+
 ## Additional resources
 1. [Sling tutorial slides](http://www.sling.si/sling/wp-content/uploads/2020/03/Krasovec_Javorsek-sling-maister-fri2020.pdf)
 
