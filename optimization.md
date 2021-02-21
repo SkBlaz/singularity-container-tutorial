@@ -4,7 +4,7 @@ Either the user can fine-tune these by hand, however, this is somewhat counterpr
 automate this process?
 
 ## Problem setting
-In the folder `optimization` you can find the files we'll need for this tutorial. The files are:
+In the folder [optimization](../optimization) you can find the files we'll need for this tutorial. The files are:
 1. environment.dsc - the Singularity description file
 2. build_image.sh - the file for building an image from the .dsc file
 3. genes.tsv - a .tsv file containing the input data
