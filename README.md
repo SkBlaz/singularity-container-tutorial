@@ -23,7 +23,7 @@ Of course, these are only some of the [possible examples](https://sylabs.io/guid
 
 **Intermediary take home message**. If possible, do the extra step of providing the .dsc file so people can properly replicate the key parts of the codebase.
 
-## Extra step - GPUs and HPC
+### Extra step - GPUs and HPC
 Assuming Bob got the *tree.py* working on **GPUs**. How can he scale with Singularity?
 
 + [With some additional configuration (GPUs).](gpu.md)
