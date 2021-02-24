@@ -7,9 +7,8 @@ automate this process?
 In the folder [optimization](https://github.com/SkBlaz/singularity-container-tutorial/tree/master/optimization) you can find the files we'll need for this tutorial. The files are:
 1. environment.dsc - the Singularity description file
 2. build_image.sh - the file for building an image from the .dsc file
-3. genes.tsv - a .tsv file containing the input data
-4. learners.py - a file for evaluation of learning algorithms
-5. clusterjob.xrsl - the .xrsl job description file
+3. learners.py - a file for evaluation of learning algorithms
+4. clusterjob.xrsl - the .xrsl job description file
 
 And that's it! Our plan is to:
 
@@ -36,14 +35,14 @@ This should finish without errors, yielding a fresh new .sif file.
 The provided `learners.py` works for example as follows:
 
 ```
-python learners.py --dataset genes.tsv --num_trees 100
+python learners.py --num_trees 100
 ```
 
-Here, we are using the provided `genes.tsv` data set and are setting the number of trees (hyperparameter) to `100`.
+Here, we are setting the number of trees (hyperparameter) to `100`.
 If you run this via the compiled image:
 
 ```
-singularity exec learners.py --dataset genes.tsv --num_trees 100
+singularity exec learners.py --num_trees 100
 ```
 The output should be in the following form:
 
@@ -75,12 +74,12 @@ We will be using the `arc` client via .xrsl job descriptions, which for example 
 
 Here, we can see that in the first part, a runfile script needs to be provided. In our case, `run.sh` can be as simple as:
 ```
-singularity exec minimalML.sif python3 learners.py --dataset genes.tsv --num_trees 100
+singularity exec minimalML.sif python3 learners.py --num_trees 100
 ```
 Looks familiar? It should! This script simply executes a single command in our case. As we are performing a benchmark of sorts, let's explore more hyperparameter values automatically (within a single job!):
 
 ```
-for j in `seq 10 100`; do singularity exec minimalML.sif python3 learners.py --dataset genes.tsv --num_trees $j;done
+for j in `seq 10 100`; do singularity exec minimalML.sif python3 learners.py --num_trees $j;done
 ```
 
 This generates multiple jobs, which will all be executed within the same `xrsl` job.
